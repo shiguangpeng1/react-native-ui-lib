@@ -14,7 +14,7 @@
     "url": "https://github.com/wix/react-native-ui-lib"
   },
   "scripts": {
-    "start": "react-native start",
+    "start": "watchman watch-del-all && export DEV_MODE=true && react-native start",
     "ios": "react-native run-ios --simulator='iPhone 11'",
     "android": "react-native run-android",
     "pretest": "npm run lint",
